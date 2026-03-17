@@ -8,6 +8,7 @@
 * **GitHub:** IgorPuts
 * **Telegram:** J.P. Mex
 * **LinkedIn:** put29492505
+
 ## Summary
 I’m currently learning *HTML, CSS, JS*. My goal is to learn everything new and exciting. I can spend a lot of time doing what interests me. I want to get knowledge and skills that will be enough for employment in a company.
 
