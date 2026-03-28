@@ -1,102 +1,87 @@
-.wrapper {
-	max-width: 1440px;
-	margin: 0 auto;
-	background: white;
-	box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+* {
+	box-sizing: border-box;
+}
 html {
 	scroll-behavior: smooth;
   }
-body {/*стилизация всего документа*/
+body {
 	font-family: 'Roboto', sans-serif;
 	min-height: 100vh;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5;
+	max-width: 1260px;
 	margin: 0 auto;
-	padding: 0;
 	display: flex;
   	flex-direction: column;
-  	justify-content: space-between;
+  	justify-content: flex-start;
 	background-color: #fdfdfd;
 	color: black;
 }
-
-.section-title {/*стилизация заголовков*/
+.section-title {
 	font-size: 24px;
 	font-weight: 500;
-	/* text-transform: uppercase; */
 	letter-spacing: 2px;
 	color: #829985;
 }
-
-* {
-	box-sizing: border-box;
-}
-.main-container {/*даем разрешение на перенос текста если не влезает*/
+.main-container {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 30px;
+	border-left: solid #cfbebe 4px;
+	border-right: solid #cfbebe 4px;
+	background: rgb(244, 244, 244);
+	padding: 20px 0 0 10px;
 }
-  
-.section {/*блоки занимают только полэкрана*/
+.section {
 width: 50%;
 }
-
 .container {
-	max-width: 1440px;
+	max-width: 1260px;
 	margin: 0 auto;
 	width: 100%;
 	padding: 20px;
 }
-.nav-list {/*располагаем панель навигации по центру*/
+.nav-list {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
+	padding-left: 10px;
 }
 .nav-link {
-	margin: 0 30px;
-	padding: 0px 20px;
-	line-height: 50px;
+	margin: 0 20px 0 10px;
+	padding: 5px 10px;
+	line-height: 30px;
 	transition: 0.3s;
 	color: #222220;
 	font-size: 22px;
+	text-transform: uppercase;
 }
-
 a {
-	/* color: #427d4a; */
   	text-decoration: none;
   	transition: color 0.5s;
 }
 a:hover {
 	color: #458f4f; 
 }
-
 @media (max-width: 768px) {
 	.section {
 	  width: 100%;
 	}
 }
-
-header {
-	background-color: #cfbebe;
-	display: block;
-}
-footer {
+header, footer {
 	background-color: #cfbebe;
 }
 .profile-image {
 	width: 200px;
 	height: 200px;
-	margin-bottom: 10px;
-	
 }
 #profile {
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;	
+	align-items: center;
+	margin-bottom: 20px;	
 }
 .profile-items {
 	display: flex;
@@ -105,12 +90,10 @@ footer {
 	align-items: center;
 	
 }
-
 .profile-name {
 	font-size: 40px;
 	position: relative;
 	margin-top: 0;
-	
 }
 .profile-name::after {/*подчеркивание под именем */
 	content: "";
@@ -129,23 +112,25 @@ footer {
 }
 .line {
 	border-top: 2px solid #ccc;
-    width: 100%;
+	width: 100%;
 }
 .footer-items {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	gap: 25px;
+	gap: 50px;
 }
 .rsschool-logo {
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
+	margin-left: 10px;
 }
 .text-description {
 	font-size: 22px;
 }
 .cont-summ, .skill-code, .languages, .courses {
 	display: flex;
+	margin: 20px 0;
 }
 .codecolor {
 	background-color: rgb(220, 220, 220);
@@ -153,4 +138,13 @@ footer {
 	font-size: 22px;
 	padding: 0;
 	margin: 0;
+}
+.github-link, .project-year {
+	font-size: 24px;
+}
+.summary {
+	text-align: justify;
+}
+.git-link-footer {
+	margin: 20px;
 }
