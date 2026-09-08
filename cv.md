@@ -22,10 +22,10 @@ I’m currently learning *HTML, CSS, JS*. My goal is to learn everything new and
 ## Code example
 ```
 function countToTen() {
-	let i = 0;
-	for(i; i < 10; i++) {
-	}
-	return i;
+  let i = 0;
+  for(i; i < 10; i++) {
+  }
+  return i;
 }
 
 console.log(countToTen());
